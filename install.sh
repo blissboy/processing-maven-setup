@@ -22,6 +22,16 @@ popd
 
 
 ##
+## libraries
+##
+
+## video
+pushd processing/libraries/video
+. ./install.sh
+popd
+
+
+##
 ## Files in Processing core library
 ##
 #mvn install:install-file -DgroupId=org.processing -DartifactId=core -Dversion=$PROCESSING_VERSION -Dpackaging=jar -Dfile=$PROCESSING_APP_DIR/Contents/Java/core/library/core.jar
