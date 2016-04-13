@@ -15,6 +15,11 @@ mvn install:install-file -DgroupId=org.processing -DartifactId=core-jar -Dversio
 mvn install:install-file -DgroupId=org.processing -DartifactId=core-gluegen-rt -Dversion=$PROCESSING_VERSION -Dpackaging=jar -Dfile=$PROCESSING_APP_DIR/Contents/Java/core/library/gluegen-rt.jar
 mvn install:install-file -DgroupId=org.processing -DartifactId=core-jogl-all -Dversion=$PROCESSING_VERSION -Dpackaging=jar -Dfile=$PROCESSING_APP_DIR/Contents/Java/core/library/jogl-all.jar
 
+# todo: replace macosx with a variable for os
+mvn install:install-file -DgroupId=org.processing -DartifactId=core-gluegen-rt-natives -Dversion=$PROCESSING_VERSION -Dpackaging=jar -Dfile=$PROCESSING_APP_DIR/Contents/Java/core/library/gluegen-rt-natives-macosx-universal.jar
+mvn install:install-file -DgroupId=org.processing -DartifactId=core-jogl-all-natives -Dversion=$PROCESSING_VERSION -Dpackaging=jar -Dfile=$PROCESSING_APP_DIR/Contents/Java/core/library/jogl-all-natives-macosx-universal.jar
+
+
 sed -e "s/PROCESSING_VERSION/$PROCESSING_VERSION/g" pom.xml > "pom.$PROCESSING_VERSION.xml"
 
 mvn install:install-file -DgroupId=org.processing -DartifactId=core -Dversion=$PROCESSING_VERSION -Dpackaging=pom -Dfile=./pom.$PROCESSING_VERSION.xml

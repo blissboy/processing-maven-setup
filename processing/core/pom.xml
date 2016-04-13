@@ -31,6 +31,17 @@
             <artifactId>core-jogl-all</artifactId>
             <version>PROCESSING_VERSION</version>
         </dependency>
+        <dependency>
+            <groupId>org.processing</groupId>
+            <artifactId>core-gluegen-rt-natives</artifactId>
+            <version>PROCESSING_VERSION</version>
+        </dependency>
+        <dependency>
+            <groupId>org.processing</groupId>
+            <artifactId>core-jogl-all-natives</artifactId>
+            <version>PROCESSING_VERSION</version>
+        </dependency>
+
     </dependencies>
 
 </project>
