@@ -20,6 +20,11 @@
     <dependencies>
         <dependency>
             <groupId>org.processing</groupId>
+            <artifactId>core</artifactId>
+            <version>PROCESSING_VERSION</version>
+        </dependency>    
+        <dependency>
+            <groupId>org.processing</groupId>
             <artifactId>video-jna</artifactId>
             <version>PROCESSING_VERSION</version>
             <scope>system</scope>

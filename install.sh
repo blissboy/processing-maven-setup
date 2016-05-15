@@ -1,9 +1,9 @@
 #!/bin/sh
 
 
-PROCESSING_APP_DIR=/Users/patwheaton/devel/processing-versions/Processing-3.0.2.app/
-PROCESSING_SKETCHBOOK_DIR=/Users/patwheaton/Dropbox/develop/Processing3Sketchbook/
-PROCESSING_VERSION=3.0.2
+PROCESSING_APP_DIR=/Users/patwheaton/devel/processing-versions/Processing-3.1.app/
+PROCESSING_SKETCHBOOK_DIR=/Users/patwheaton/Documents/Processing/
+PROCESSING_VERSION=3.1
 
 # TODO sanity check dirs
 
@@ -29,6 +29,13 @@ popd
 pushd processing/libraries/video
 . ./install.sh
 popd
+
+## controlP5
+pushd processing/libraries/controlP5
+. ./install.sh
+popd
+
+
 
 
 ##
