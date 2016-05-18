@@ -22,6 +22,7 @@
             <groupId>org.processing</groupId>
             <artifactId>core</artifactId>
             <version>PROCESSING_VERSION</version>
+            <type>pom</type>
         </dependency>    
         <dependency>
             <groupId>org.processing</groupId>
@@ -37,18 +38,13 @@
             <scope>system</scope>
             <systemPath>${sketchbook.dir}/libraries/video/library/gstreamer-java.jar</systemPath>
         </dependency>
+
         <dependency>
             <groupId>org.processing</groupId>
             <artifactId>video-video</artifactId>
             <version>PROCESSING_VERSION</version>
             <scope>system</scope>
             <systemPath>${sketchbook.dir}/libraries/video/library/video.jar</systemPath>
-        </dependency>
-        <dependency>
-            <groupId>org.processing</groupId>
-            <artifactId>core</artifactId>
-            <version>PROCESSING_VERSION</version>
-            <type>pom</type>
         </dependency>
 
     </dependencies>
