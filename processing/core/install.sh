@@ -11,9 +11,11 @@
 ##
 
 echo processing version = $PROCESSING_VERSION
-mvn install:install-file -DgroupId=org.processing -DartifactId=core-jar -Dversion=$PROCESSING_VERSION -Dpackaging=jar -Dfile=$PROCESSING_APP_DIR/Contents/Java/core/library/core.jar
+mvn install:install-file -DgroupId=org.processing -DartifactId=core-jar -Dversion=$PROCESSING_VERSION -Dpackaging=jar -Dfile=$PROCESSING_APP_DIR/Contents/Java/core.jar
 mvn install:install-file -DgroupId=org.processing -DartifactId=core-gluegen-rt -Dversion=$PROCESSING_VERSION -Dpackaging=jar -Dfile=$PROCESSING_APP_DIR/Contents/Java/core/library/gluegen-rt.jar
 mvn install:install-file -DgroupId=org.processing -DartifactId=core-jogl-all -Dversion=$PROCESSING_VERSION -Dpackaging=jar -Dfile=$PROCESSING_APP_DIR/Contents/Java/core/library/jogl-all.jar
+mvn install:install-file -DgroupId=org.processing -DartifactId=core-jna -Dversion=$PROCESSING_VERSION -Dpackaging=jar -Dfile=$PROCESSING_APP_DIR/Contents/Java/jna.jar
+mvn install:install-file -DgroupId=org.processing -DartifactId=core-jna-platform -Dversion=$PROCESSING_VERSION -Dpackaging=jar -Dfile=$PROCESSING_APP_DIR/Contents/Java/jna-platform.jar
 
 # todo: replace macosx with a variable for os
 mvn install:install-file -DgroupId=org.processing -DartifactId=core-gluegen-rt-natives -Dversion=$PROCESSING_VERSION -Dpackaging=jar -Dfile=$PROCESSING_APP_DIR/Contents/Java/core/library/gluegen-rt-natives-macosx-universal.jar
