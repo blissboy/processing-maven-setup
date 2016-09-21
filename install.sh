@@ -3,7 +3,7 @@
 
 PROCESSING_APP_DIR=/Users/patwheaton/devel/processing-versions/Processing-3.1.1.app/
 PROCESSING_SKETCHBOOK_DIR=/Users/patwheaton/Documents/Processing3Sketchbook/
-PROCESSING_VERSION=3.1.1
+PROCESSING_VERSION=3.2.1
 
 # TODO sanity check dirs
 
