@@ -1,9 +1,9 @@
 #!/bin/sh
 
 
-PROCESSING_APP_DIR=/Users/patwheaton/devel/processing-versions/Processing-3.1.1.app/
+PROCESSING_APP_DIR=/Users/patwheaton/devel/processing-versions/Processing-3.2.3.app/
 PROCESSING_SKETCHBOOK_DIR=/Users/patwheaton/Documents/Processing3Sketchbook/
-PROCESSING_VERSION=3.2.1
+PROCESSING_VERSION=3.2.3
 
 # TODO sanity check dirs
 
@@ -35,7 +35,10 @@ pushd processing/libraries/controlP5
 . ./install.sh
 popd
 
-
+## G4P
+pushd processing/libraries/g4p
+. ./install.sh
+popd
 
 
 ##
